@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | SOUHAYL EL HAMMADI</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(90deg, #3a8dde 0%, #7b2ff2 100%);
+      --primary-color: #3a8dde;
+      --secondary-color: #7b2ff2;
+      --bg-light: #f4f6f8;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-light);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-card i {
+      font-size: 2.5rem;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .tech-stack {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .tech-stack .badge {
+      font-size: 1rem;
+      margin: 0.3rem;
+      background: var(--primary-gradient);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+    }<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+	:root {
+	  --primary-gradient: linear-gradient(90deg, #3a8dde 0%, #7b2ff2 100%);
+	  --primary-color: #3a8dde;
+	  --secondary-color: #7b2ff2;
+	  --accent-color: #2ee59d;
+	  --text-dark: #222;
+	  --text-light: #fff;
+	  --bg-light: #f7f8fa;
+	}
+	body { background: var(--bg-light); font-family: 'Montserrat', Arial, sans-serif; }
+	.souhayl-logo {
+	  font-family: 'Montserrat', Arial, sans-serif;
+	  font-size: 2rem;
+	  font-weight: 900;
+	  letter-spacing: 3px;
+	  background: var(--primary-gradient);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  background-clip: text;
+	  text-fill-color: transparent;
+	  transition: transform 0.2s cubic-bezier(.4,2,.6,1), text-shadow 0.2s;
+	  text-shadow: 0 2px 8px rgba(58,141,222,0.10);
+	}
+	.souhayl-logo:hover {
+	  transform: scale(1.08) rotate(-2deg);
+	  text-shadow: 0 4px 16px rgba(123,47,242,0.18);
+	}
+	.section-title {
+	  font-size: 2.2rem;
+	  font-weight: 800;
+	  background: var(--primary-gradient);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  background-clip: text;
+	  text-fill-color: transparent;
+	  margin-bottom: 1.5rem;
+	}
+	.hero {
+	  display: flex; flex-direction: column; align-items: center; justify-content: center;
+	  min-height: 80vh; text-align: center; background: #fff; border-radius: 0 0 2rem 2rem; box-shadow: 0 4px 32px rgba(58,141,222,0.07);
+	  margin-bottom: 2rem;
+	}
+	.hero .souhayl-logo { font-size: 3rem; margin-bottom: 0.5rem; }
+	.hero-title { font-size: 2rem; font-weight: 700; color: var(--primary-color); }
+	.hero-contact { margin: 1rem 0; }
+	.hero-contact a, .hero-contact span { display: inline-block; margin: 0 0.5rem; color: var(--secondary-color); font-size: 1.1rem; }
+	.hero-contact a:hover { color: var(--accent-color); }
+	.btn-cv, .btn-contact { margin: 0.5rem; padding: 0.7rem 2rem; border-radius: 2rem; font-weight: 700; }
+	.btn-cv { background: var(--primary-gradient); color: #fff; border: none; }
+	.btn-cv:hover { background: linear-gradient(90deg, #7b2ff2 0%, #3a8dde 100%); }
+	.btn-contact { background: #fff; color: var(--primary-color); border: 2px solid var(--primary-color); }
+	.btn-contact:hover { background: var(--primary-gradient); color: #fff; }
+	.section { background: #fff; border-radius: 1.5rem; box-shadow: 0 2px 16px rgba(58,141,222,0.06); padding: 2.5rem 1.5rem; margin-bottom: 2rem; }
+	.badge-skill { background: var(--primary-gradient); color: #fff; border-radius: 1rem; padding: 0.4rem 1.2rem; margin: 0.2rem; font-size: 1rem; font-weight: 600; display: inline-block; }
+	.timeline { list-style: none; padding: 0; }
+	.timeline li { margin-bottom: 1.2rem; }
+	.qualities-list, .lang-list { list-style: none; padding: 0; }
+	.qualities-list li, .lang-list li { margin-bottom: 0.5rem; font-size: 1.1rem; }
+	.exp-list { list-style: none; padding: 0; }
+	.exp-list li { margin-bottom: 1.5rem; }
+	@media (min-width: 768px) {
+	  .hero { min-height: 60vh; }
+	  .section { padding: 3rem 3rem; }
+	}
+	
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h souhayl-logo" href="index.html">SOUHAYL</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+				
+							</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+  <!-- Banner -->
+ 
+
+  <!-- Classic Service Section -->
+  <section class="features_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="main_title">
+            <h2>Service Offers</h2>
+            <p>
+              As a passionate full-stack developer, I provide end-to-end digital services — from UI/UX design to web development and SEO — to bring your web projects to life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row feature_inner">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item">
+            <img src="img/services/s1.png" alt="">
+            <h4>WordPress Development</h4>
+            <p>Building responsive and fully customized websites using WordPress.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item">
+            <img src="img/services/s2.png" alt="">
+            <h4>UI/UX Design</h4>
+            <p>Clean and intuitive design using Figma and best practices for mobile-first design.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item">
+            <img src="img/services/s3.png" alt="">
+            <h4>Web Development</h4>
+            <p>React, Flask, Laravel — full-stack web apps with modern tech and secure APIs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item">
+            <img src="img/services/s4.png" alt="">
+            <h4>SEO Optimization</h4>
+            <p>Improving site structure, performance, and search engine visibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Service Cards -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-desktop"></i>
+          <h4>Frontend Development</h4>
+          <p>Modern, mobile-friendly interfaces using React, HTML, CSS and JS.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-server"></i>
+          <h4>Backend Development</h4>
+          <p>Secure and scalable backend using Flask, Laravel, Node.js & MongoDB/MySQL.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-code"></i>
+          <h4>Custom Applications</h4>
+          <p>Tailored business apps: dashboards, CRMs, AI tools and automations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-cloud-upload"></i>
+          <h4>Deployment & Hosting</h4>
+          <p>Deploying apps with Vercel, Netlify, Heroku or VPS + domain & SSL setup.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-line-chart"></i>
+          <h4>Performance & SEO</h4>
+          <p>Improving loading speed, mobile experience and Google ranking.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="fa fa-wordpress"></i>
+          <h4>WordPress Sites</h4>
+          <p>Modern websites with Elementor, WooCommerce or custom themes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <div class="tech-stack">
+    <h2 class="section-title">Tech Stack</h2>
+    <span class="badge">HTML5</span>
+    <span class="badge">CSS3</span>
+    <span class="badge">JavaScript</span>
+    <span class="badge">React</span>
+    <span class="badge">Flask</span>
+    <span class="badge">Laravel</span>
+    <span class="badge">MongoDB</span>
+    <span class="badge">MySQL</span>
+    <span class="badge">Git</span>
+    <span class="badge">Firebase</span>
+    <span class="badge">Node.js</span>
+    <span class="badge">Vercel</span>
+  </div>
+
+  <!-- Testimonials -->
+  
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer_area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="footer_top flex-column">
+          <div class="footer_logo">
+            <h4>Follow Me</h4>
+          </div>
+          <div class="footer_social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer_bottom justify-content-center">
+      <p class="col-lg-8 col-sm-12 footer-text text-center">
+        &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/theme.js"></script>
+
+</body>
+
+</html>
